@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Chess openings </h1>
+
+<article>
+    <h2>
+        Chess history
+    </h2>
+
+    <p>
+        The history of chess can be traced back nearly 1,500 years to its earliest 
+        known predecessor, called chaturanga, in India; its prehistory is the subject of speculation.
+        Click here to read more
+        <a href="https://en.wikipedia.org/wiki/History_of_chess">wikipedia</a>
+    </p>
+  </article>
+
+<p>
+    The next table represents the most important opennings in chess.
+</p>
+
+<table>
+    <caption>
+        Top 5 chess opennings
+    </caption>
+    <thead>
+      <tr>
+        <th>Openning</th>
+        <th>Founder</th>
+        <th>Number of games using this openning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Alekhine Defense</th>
+        <td>Alexander Alekhine</td>
+        <td>10000</td>
+      </tr>
+      <tr>
+        <th scope="row">Albin Counter-Gambit</th>
+        <td>Adolf Albin</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <th scope="row">Benoni Defense</th>
+        <td>Unknown</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <th scope="row">Queen gambit</th>
+        <td>Unknown</td>
+        <td>500</td>
+      </tr>
+    </tbody>
+  </table>
+  
+<footer>
+    <p> All materials were take from: <br>
+        <a href="https://www.thechesswebsite.com/chess-openings/">Chess opennings</a>
+    </p>
+</footer>
+
+<ul>
+  {% for md in all_md %}
+    <li><a href="/opening/{{md}}.md">{{md}}</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
